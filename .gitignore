@@ -1,5 +1,4 @@
 # ZeroClaw binaries
-*.exe
 *.dll
 *.so
 *.dylib
