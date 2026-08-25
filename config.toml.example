@@ -2,9 +2,44 @@ schema_version = 3
 
 [providers.models.custom.sensenova]
 uri = "https://token.sensenova.cn/v1"
-api_key = "sk-"
+api_key = ""
 model = "sensenova-6.8-flash-lite"
 context_window = 16000
+
+[agents.default]
+model_provider = "custom.sensenova"
+model = "sensenova-6.8-flash-lite"
+risk_profile = "default"
+runtime_profile = "default"
+
+[agents.chat]
+acp_enable_mcp = false
+delegate_same_risk_profile = true
+enabled = true
+model_provider = "custom.sensenova"
+risk_profile = "default"
+runtime_profile = "default"
+
+[[agents.chat.delegates]]
+agent = "default"
+mode = "bounded"
+
+[agents.chat.a2a]
+published = false
+
+[agents.chat.identity]
+format = "openclaw"
+
+[agents.chat.memory]
+backend = "sqlite"
+search_mode = "bm25"
+
+[agents.chat.precheck]
+enabled = true
+timeout_secs = 5
+
+[agents.chat.workspace]
+unrestricted_filesystem = false
 
 [risk_profiles.default]
 allowlist = ["shell", "file_read", "file_write", "browser", "http", "memory_read", "memory_write", "tool_call"]
@@ -16,8 +51,8 @@ max_tokens = 4096
 timeout_secs = 120
 retry_count = 2
 
-[agents.default]
-model_provider = "custom.sensenova"
-model = "sensenova-6.8-flash-lite"
-risk_profile = "default"
-runtime_profile = "default"
+[gateway]
+paired_tokens = []
+
+[memory]
+search_mode = "bm25"

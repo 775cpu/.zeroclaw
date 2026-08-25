@@ -1,0 +1,64 @@
+{
+  "components": {
+    "channels": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.107257200+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.107241800+00:00"
+    },
+    "control-plane": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.106778600+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.106763700+00:00"
+    },
+    "daemon": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.039390800+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.039011500+00:00"
+    },
+    "gateway": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.203638200+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.203625500+00:00"
+    },
+    "mqtt": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.148002200+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.147991200+00:00"
+    },
+    "scheduler": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:24:08.161247+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:24:08.161239200+00:00"
+    },
+    "socket": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.147953100+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.147923500+00:00"
+    },
+    "wss": {
+      "last_error": null,
+      "last_ok": "2026-08-24T16:20:53.148047100+00:00",
+      "restart_count": 0,
+      "status": "ok",
+      "updated_at": "2026-08-24T16:20:53.148028100+00:00"
+    }
+  },
+  "pid": 2896,
+  "updated_at": "2026-08-24T16:24:13.048928100+00:00",
+  "uptime_seconds": 200,
+  "written_at": "2026-08-24T16:24:13.050971600+00:00"
+}
